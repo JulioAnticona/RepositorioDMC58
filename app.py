@@ -14,15 +14,14 @@ if sesion == "Sesión 1":
   st.write("Bienvenido a la sesión 1")
   st.image("PYTHON.jfif")
 
-if sesion == "Sesión 2":
-  st.write("Bienvenido a la sesión 2")
+elif sesion == "Sesión 2":
 
-  precio= st.number_input("Ingrese el precio del producto",min_value=0, max_valu=5000 , value =1200)
-  descuento = st.number_input("Ingrese el descuento del producto del 0 al 100%", min_value=0, max_valu=100)
-
-  precio_final_producto = precio - (precio*descuento/100)
-
-  st.write ("El precio del producto es:" , precio_final_producto)
+  st.write("Bienvenido la sesión 2")
+ 
+  precio = st.number_input("Ingrese el precio del producto", min_value = 0 , max_value = 5000 , value = 1200)
+  descuento = st.number_input("Ingrese el descuento del producto del 0 al 100% ", min_value = 0 , max_value = 100 )
+  precio_final_producto = precio - (precio*(descuento/100))
+  st.write("El precio final del producto es: ", precio_final_producto  )
 
 if sesion == "Sesión 3":
   st.write("Bienvenido a la sesión 3")

@@ -1,5 +1,5 @@
 import streamlit as st
-import numpy as nt
+import numpy as np
 
 st.title("Mi primera aplicacion en python")
 

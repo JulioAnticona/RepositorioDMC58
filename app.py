@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as nt
 
 st.title("Mi primera aplicacion en python")
 
@@ -25,9 +26,12 @@ elif sesion == "Sesión 2":
 
 if sesion == "Sesión 3":
   st.write("Bienvenido a la sesión 3")
-  Inicio_rango = st.slider("Selecione un valor", min_value=0, max_value=20, value=7)
   
-  
+  fin_rango = st.slider("Selecione un valor", min_value=0, max_value=20, value=7)
+
+  arreglo = np.arange (0, fin_rango)
+
+  st.write (arreglo)
 
 if sesion == "Sesión 4":
   st.write("Bienvenido a la sesión 4")

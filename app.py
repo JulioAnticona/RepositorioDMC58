@@ -25,6 +25,9 @@ elif sesion == "Sesión 2":
 
 if sesion == "Sesión 3":
   st.write("Bienvenido a la sesión 3")
+  Inicio_rango = st.slider("Selecione un valor", min_value=0, max_value=20, value=7)
+  
+  
 
 if sesion == "Sesión 4":
   st.write("Bienvenido a la sesión 4")

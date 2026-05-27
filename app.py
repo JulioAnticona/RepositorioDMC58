@@ -43,8 +43,7 @@ if sesion == "Sesión 4":
   cuota = round(lf.cuota_prestamo(principal, tasa_anual, anios, pagos_anio),2)
   st.write(f"El valor de la cuota es {cuota}")
 
-else:
-
+elif sesion == "Sesión 5":
   st.write("Bienvenido la sesión 5")
   archivo = st.sidebar.file_uploader("Cargue su archivo")
   if archivo is not None:

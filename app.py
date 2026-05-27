@@ -43,8 +43,7 @@ if sesion == "Sesión 4":
   cuota = round(lf.cuota_prestamo(principal, tasa_anual, anios, pagos_anio),2)
   st.write(f"El valor de la cuota es {cuota}")
 
-
-   else:
+  else:
 
   
 
@@ -75,6 +74,9 @@ if sesion == "Sesión 4":
   else: 
 
     st.write("Cargue el archivo ")
+
+
+
 
 
 

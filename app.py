@@ -43,16 +43,37 @@ if sesion == "Sesión 4":
   cuota = round(lf.cuota_prestamo(principal, tasa_anual, anios, pagos_anio),2)
   st.write(f"El valor de la cuota es {cuota}")
 
-  else:
-    st.write("Bienvenido la sesión 4")
-    archivo = st.sidebar.file_uploader("Cargue su archivo")
-    if archivo is not None:
-      if archivo.name.endswith(".csv"):
-        datos = pd.read_csv(archivo)
-      elif archivo.name.endswith(".xlsx"):
-        datos = pd.read_excel(archivo)
-      st.write(datos)
-    else: 
+
+   else:
+
+  
+
+  st.write("Bienvenido la sesión 4")
+
+  archivo = st.sidebar.file_uploader("Cargue su archivo")
+
+  
+
+  if archivo is not None:
+
+    
+
+    if archivo.name.endswith(".csv"):
+
+      datos = pd.read_csv(archivo)
+
+    elif archivo.name.endswith(".xlsx"):
+
+      datos = pd.read_excel(archivo)
+
+ 
+
+    st.write(datos)
+
+ 
+
+  else: 
+
     st.write("Cargue el archivo ")
 
 

@@ -44,6 +44,7 @@ if sesion == "Sesión 4":
   st.write(f"El valor de la cuota es {cuota}")
 
 if sesion == "Sesión 5":
+  else:
   st.write("Bienvenido la sesión 5")
   archivo = st.sidebar.file_uploader("Cargue su archivo")
   if archivo is not None:
